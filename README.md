@@ -44,8 +44,19 @@ WITHU — AI 기반 개인 맞춤 건강 미션과 그룹 동기부여를 결합
 | **웹앱** (팀원·심사위원에게 줄 주소) | https://rise-client-rohdaeyoungs-projects.vercel.app |
 | API 문서 (Swagger) | https://1-201-117-9.nip.io/swagger-ui.html |
 | 백엔드 서버 | `1-201-117-9.nip.io` — 화면이 없는 API 서버라 브라우저로 열면 `AUTH_003` JSON에 **401**이 뜨는 것이 정상입니다 |
+| 프론트엔드 저장소 | https://github.com/rohdaeyoung/RISE-client |
 
 **테스트 계정: `test@withu.app` / `withu1234`** (그룹 코드 `TEAM33`, Day 7 상태)
+
+### 저장소 구성
+
+WITHU는 프론트와 백엔드를 저장소로 나눠 두었습니다. 이 문서는 그중 **백엔드**입니다.
+
+| 저장소 | 역할 | 배포처 |
+|---|---|---|
+| [RISE-server](https://github.com/rohdaeyoung/RISE-server) **(현재 저장소)** | API 서버 — Spring Boot + MySQL + OpenAI | 가비아 클라우드 |
+| [RISE-client](https://github.com/rohdaeyoung/RISE-client) | 웹앱 화면 — Vite + React | Vercel |
+| [RISE](https://github.com/rohdaeyoung/RISE) | 위 둘을 `frontend/` · `backend/`로 함께 담은 저장소 | — |
 
 프론트는 Vercel, 백엔드와 MySQL은 해커톤에서 제공받은 가비아 클라우드 서버에 올라가 있습니다.
 
